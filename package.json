@@ -1,0 +1,19 @@
+{
+  "name": "typescript-template",
+  "private": true,
+  "version": "0.0.0",
+  "author": "akanevrc",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && (if [ -e LICENSE ]; then cp LICENSE dist; fi) && yarn licenses list > THIRD_PARTY && cp THIRD_PARTY dist",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss-nesting": "^10.1.3",
+    "postcss-normalize": "^10.0.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}
